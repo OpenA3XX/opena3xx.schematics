@@ -1,0 +1,46 @@
+LABCENTER PROTEUS TOOL INFORMATION FILE
+=======================================
+
+In case of difficulty, please e-mail support@labcenter.co.uk
+
+Tool set up for Proteus layout 'opena3xx-digital-hardware-controller.LYT'.
+CADCAM generated at 22:12:48 on 10 April 2021.
+
+File List
+---------
+Top Copper              : opena3xx-digital-hardware-controller - CADCAM Top Copper.TXT
+Bottom Copper           : opena3xx-digital-hardware-controller - CADCAM Bottom Copper.TXT
+Top Silk Screen         : opena3xx-digital-hardware-controller - CADCAM Top Silk Screen.TXT
+Top Solder Resist       : opena3xx-digital-hardware-controller - CADCAM Top Solder Resist.TXT
+Bottom Solder Resist    : opena3xx-digital-hardware-controller - CADCAM Bottom Solder Resist.TXT
+Top SMT Paste Mask      : opena3xx-digital-hardware-controller - CADCAM Top SMT Paste Mask.TXT
+Mechanical 1            : opena3xx-digital-hardware-controller - CADCAM Mechanical 1.TXT
+Drill                   : opena3xx-digital-hardware-controller - CADCAM Drill.TXT
+
+Photoplotter Setup
+------------------
+Format: RS274X, ASCII, 2.4, imperial, absolute, eob=*, LZO
+Notes:  D=Diameter, S=Side, W=Width, H=Height, C=Chamfer
+
+D10	CIRCLE  D=10th                                                            DRAW
+D11	CIRCLE  D=30th                                                            FLASH
+D12	SQUARE  S=80th                                                            FLASH
+D13	RECT    W=39.3th              H=11.8th                                    FLASH
+D14	RECT    W=40th                H=50th                                      FLASH
+D15	CIRCLE  D=8th                                                             DRAW
+D16	CIRCLE  D=50th                                                            FLASH
+D17	SQUARE  S=100th                                                           FLASH
+D18	RECT    W=59.3th              H=31.8th                                    FLASH
+D19	RECT    W=60th                H=70th                                      FLASH
+
+NC Drill Setup
+--------------
+Format: ASCII, 2.4, imperial, absolute, eob=<CR><LF>, no zero suppression.
+Notes:  Tool sizes are diameters. Layer sets are in brackets - 0=TOP, 15=BOTTOM, 1-14=INNER.
+
+T01	15th (0-15)
+T02	40th (0-15)
+T03	30th (0-15)
+
+
+[END OF FILE]
