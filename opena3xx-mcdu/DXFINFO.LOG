@@ -1,0 +1,78 @@
+WARNING (087792): XRECORD object group 340 unknown/not supported - ignored.
+WARNING (087804): XRECORD object group 280 unknown/not supported - ignored.
+WARNING (087812): XRECORD object group 141 unknown/not supported - ignored.
+WARNING (087816): XRECORD object group 142 unknown/not supported - ignored.
+XRECORD: name="CEPSNID", handle="E6A", group="340", value="0"
+XRECORD: name="DIMSTYLEDATA", handle="E80", group="1000", value="DSTYLE"
+WARNING (089406): XRECORD object group 1002 unknown/not supported - ignored.
+WARNING (089408): XRECORD object group 1070 unknown/not supported - ignored.
+WARNING (089412): XRECORD object group 1070 unknown/not supported - ignored.
+WARNING (089414): XRECORD object group 40 unknown/not supported - ignored.
+WARNING (089416): XRECORD object group 1070 unknown/not supported - ignored.
+WARNING (089420): XRECORD object group 1070 unknown/not supported - ignored.
+WARNING (089422): XRECORD object group 40 unknown/not supported - ignored.
+WARNING (089424): XRECORD object group 1070 unknown/not supported - ignored.
+WARNING (089426): XRECORD object group 40 unknown/not supported - ignored.
+WARNING (089428): XRECORD object group 1070 unknown/not supported - ignored.
+WARNING (089432): XRECORD object group 1070 unknown/not supported - ignored.
+WARNING (089434): XRECORD object group 40 unknown/not supported - ignored.
+WARNING (089436): XRECORD object group 1070 unknown/not supported - ignored.
+WARNING (089440): XRECORD object group 1070 unknown/not supported - ignored.
+WARNING (089442): XRECORD object group 40 unknown/not supported - ignored.
+WARNING (089444): XRECORD object group 1070 unknown/not supported - ignored.
+WARNING (089446): XRECORD object group 40 unknown/not supported - ignored.
+WARNING (089448): XRECORD object group 1070 unknown/not supported - ignored.
+WARNING (089450): XRECORD object group 40 unknown/not supported - ignored.
+WARNING (089452): XRECORD object group 1070 unknown/not supported - ignored.
+WARNING (089456): XRECORD object group 1070 unknown/not supported - ignored.
+WARNING (089460): XRECORD object group 1070 unknown/not supported - ignored.
+WARNING (089464): XRECORD object group 1070 unknown/not supported - ignored.
+WARNING (089468): XRECORD object group 1070 unknown/not supported - ignored.
+WARNING (089472): XRECORD object group 1070 unknown/not supported - ignored.
+WARNING (089476): XRECORD object group 1070 unknown/not supported - ignored.
+WARNING (089478): XRECORD object group 340 unknown/not supported - ignored.
+WARNING (089480): XRECORD object group 1070 unknown/not supported - ignored.
+WARNING (089482): XRECORD object group 40 unknown/not supported - ignored.
+WARNING (089484): XRECORD object group 1070 unknown/not supported - ignored.
+WARNING (089488): XRECORD object group 1070 unknown/not supported - ignored.
+WARNING (089492): XRECORD object group 1002 unknown/not supported - ignored.
+XRECORD: name="HYPERLINKBASE", handle="E63", group="1", value=""
+XRECORD: name="LAYOUTDICT", handle="E65", group="340", value="1A"
+XRECORD: name="PLOTSETDICT", handle="E66", group="340", value="19"
+XRECORD: name="PUCSBASE", handle="E70", group="340", value="0"
+XRECORD: name="PUCSORGBOTTOM", handle="E72", group="10", value="0.0"
+WARNING (089658): XRECORD object group 20 unknown/not supported - ignored.
+WARNING (089660): XRECORD object group 30 unknown/not supported - ignored.
+XRECORD: name="PUCSORGLEFT", handle="E73", group="10", value="0.0"
+WARNING (089698): XRECORD object group 20 unknown/not supported - ignored.
+WARNING (089700): XRECORD object group 30 unknown/not supported - ignored.
+XRECORD: name="PUCSORGTOP", handle="E71", group="10", value="0.0"
+WARNING (089738): XRECORD object group 20 unknown/not supported - ignored.
+WARNING (089740): XRECORD object group 30 unknown/not supported - ignored.
+XRECORD: name="PUCSORTHOVIEW", handle="E6F", group="70", value="     0"
+XRECORD: name="TSTACKALIGN", handle="E61", group="90", value="        1"
+XRECORD: name="UCSBASE", handle="E79", group="340", value="0"
+XRECORD: name="UCSORGBOTTOM", handle="E7B", group="10", value="0.0"
+WARNING (089874): XRECORD object group 20 unknown/not supported - ignored.
+WARNING (089876): XRECORD object group 30 unknown/not supported - ignored.
+XRECORD: name="UCSORGLEFT", handle="E7C", group="10", value="0.0"
+WARNING (089914): XRECORD object group 20 unknown/not supported - ignored.
+WARNING (089916): XRECORD object group 30 unknown/not supported - ignored.
+XRECORD: name="UCSORGTOP", handle="E7A", group="10", value="0.0"
+WARNING (089954): XRECORD object group 20 unknown/not supported - ignored.
+WARNING (089956): XRECORD object group 30 unknown/not supported - ignored.
+XRECORD: name="UCSORTHOVIEW", handle="E78", group="70", value="     0"
+WARNING (090212): XRECORD object group 148 unknown/not supported - ignored.
+WARNING (090214): XRECORD object group 149 unknown/not supported - ignored.
+WARNING (090216): XRECORD object group 149 unknown/not supported - ignored.
+WARNING (090218): XRECORD object group 93 unknown/not supported - ignored.
+WARNING (090220): XRECORD object group 94 unknown/not supported - ignored.
+WARNING (090222): XRECORD object group 282 unknown/not supported - ignored.
+WARNING (090224): XRECORD object group 72 unknown/not supported - ignored.
+WARNING (090226): XRECORD object group 77 unknown/not supported - ignored.
+WARNING (090228): XRECORD object group 171 unknown/not supported - ignored.
+WARNING (090230): XRECORD object group 175 unknown/not supported - ignored.
+WARNING (090232): XRECORD object group 179 unknown/not supported - ignored.
+WARNING (090234): XRECORD object group 273 unknown/not supported - ignored.
+Conversion failed:Invalid integer value ''
+
