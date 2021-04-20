@@ -1,4 +1,4 @@
-# Writing all output to: C:\Users\david\git\opena3xx\opena3xx.schematics\digital-hardware-controller\opena3xx-digital-hardware-controller.log
+# Writing all output to: C:\Users\david\git\opena3xx\opena3xx.schematics\opena3xx-digital-hardware-controller\opena3xx-digital-hardware-controller.log
 set pad_wire_necking on
 bus diagonal
 fanout 5
