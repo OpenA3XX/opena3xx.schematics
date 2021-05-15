@@ -1841,58 +1841,151 @@ Wire Notes Line
 $Comp
 L opena3xx-kicad:TLL-6A SW100
 U 1 1 60C7550B
-P 6700 5400
-F 0 "SW100" H 6775 5605 50  0000 C CNN
-F 1 "TLL-6A" H 6775 5514 50  0000 C CNN
-F 2 "openaa3xx:TACTILE_LED_TH" H 6775 5423 50  0000 C CNN
-F 3 "https://eu.mouser.com/datasheet/2/910/312_TL-6-1571269.pdf" H 6700 5450 50  0001 C CNN
-	1    6700 5400
+P 5775 5400
+F 0 "SW100" H 5850 5605 50  0000 C CNN
+F 1 "TLL-6A" H 5850 5514 50  0000 C CNN
+F 2 "openaa3xx:TACTILE_LED_TH" H 5850 5423 50  0000 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/910/312_TL-6-1571269.pdf" H 5775 5450 50  0001 C CNN
+	1    5775 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5575 5575 5575 5600
+Wire Wire Line
+	5575 5775 5575 5700
+$Comp
+L opena3xx-kicad:TLL-6A SW?
+U 1 1 60D933F5
+P 5775 6175
+F 0 "SW?" H 5850 6380 50  0000 C CNN
+F 1 "TLL-6A" H 5850 6289 50  0000 C CNN
+F 2 "openaa3xx:TACTILE_LED_TH" H 5850 6198 50  0000 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/910/312_TL-6-1571269.pdf" H 5775 6225 50  0001 C CNN
+	1    5775 6175
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R100
-U 1 1 60C77A05
-P 6000 5675
-F 0 "R100" H 6059 5721 50  0000 L CNN
-F 1 "R_Small" H 6059 5630 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 6000 5675 50  0001 C CNN
-F 3 "~" H 6000 5675 50  0001 C CNN
-	1    6000 5675
+L opena3xx-kicad:TLL-6A SW?
+U 1 1 60D94963
+P 5775 6950
+F 0 "SW?" H 5850 7155 50  0000 C CNN
+F 1 "TLL-6A" H 5850 7064 50  0000 C CNN
+F 2 "openaa3xx:TACTILE_LED_TH" H 5850 6973 50  0000 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/910/312_TL-6-1571269.pdf" H 5775 7000 50  0001 C CNN
+	1    5775 6950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R101
-U 1 1 60C78E65
-P 7475 5675
-F 0 "R101" H 7534 5721 50  0000 L CNN
-F 1 "R_Small" H 7534 5630 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 7475 5675 50  0001 C CNN
-F 3 "~" H 7475 5675 50  0001 C CNN
-	1    7475 5675
+L opena3xx-kicad:TLL-6A SW?
+U 1 1 60D9FCBD
+P 5775 7775
+F 0 "SW?" H 5850 7980 50  0000 C CNN
+F 1 "TLL-6A" H 5850 7889 50  0000 C CNN
+F 2 "openaa3xx:TACTILE_LED_TH" H 5850 7798 50  0000 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/910/312_TL-6-1571269.pdf" H 5775 7825 50  0001 C CNN
+	1    5775 7775
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6000 5575 6500 5575
+	5575 7950 5575 7975
 Wire Wire Line
-	6500 5575 6500 5600
+	5575 8150 5575 8075
+$Comp
+L opena3xx-kicad:TLL-6A SW?
+U 1 1 60D9FCC5
+P 5775 8550
+F 0 "SW?" H 5850 8755 50  0000 C CNN
+F 1 "TLL-6A" H 5850 8664 50  0000 C CNN
+F 2 "openaa3xx:TACTILE_LED_TH" H 5850 8573 50  0000 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/910/312_TL-6-1571269.pdf" H 5775 8600 50  0001 C CNN
+	1    5775 8550
+	1    0    0    -1  
+$EndComp
+$Comp
+L opena3xx-kicad:TLL-6A SW?
+U 1 1 60D9FCCB
+P 5775 9325
+F 0 "SW?" H 5850 9530 50  0000 C CNN
+F 1 "TLL-6A" H 5850 9439 50  0000 C CNN
+F 2 "openaa3xx:TACTILE_LED_TH" H 5850 9348 50  0000 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/910/312_TL-6-1571269.pdf" H 5775 9375 50  0001 C CNN
+	1    5775 9325
+	1    0    0    -1  
+$EndComp
+$Comp
+L opena3xx-kicad:TLL-6A SW?
+U 1 1 60DBB6C4
+P 7125 5400
+F 0 "SW?" H 7200 5605 50  0000 C CNN
+F 1 "TLL-6A" H 7200 5514 50  0000 C CNN
+F 2 "openaa3xx:TACTILE_LED_TH" H 7200 5423 50  0000 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/910/312_TL-6-1571269.pdf" H 7125 5450 50  0001 C CNN
+	1    7125 5400
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6000 5775 6500 5775
+	6925 5575 6925 5600
 Wire Wire Line
-	6500 5775 6500 5700
+	6925 5775 6925 5700
+$Comp
+L opena3xx-kicad:TLL-6A SW?
+U 1 1 60DBB6CC
+P 7125 6175
+F 0 "SW?" H 7200 6380 50  0000 C CNN
+F 1 "TLL-6A" H 7200 6289 50  0000 C CNN
+F 2 "openaa3xx:TACTILE_LED_TH" H 7200 6198 50  0000 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/910/312_TL-6-1571269.pdf" H 7125 6225 50  0001 C CNN
+	1    7125 6175
+	1    0    0    -1  
+$EndComp
+$Comp
+L opena3xx-kicad:TLL-6A SW?
+U 1 1 60DBB6D2
+P 7125 6950
+F 0 "SW?" H 7200 7155 50  0000 C CNN
+F 1 "TLL-6A" H 7200 7064 50  0000 C CNN
+F 2 "openaa3xx:TACTILE_LED_TH" H 7200 6973 50  0000 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/910/312_TL-6-1571269.pdf" H 7125 7000 50  0001 C CNN
+	1    7125 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L opena3xx-kicad:TLL-6A SW?
+U 1 1 60DBB6D8
+P 7125 7775
+F 0 "SW?" H 7200 7980 50  0000 C CNN
+F 1 "TLL-6A" H 7200 7889 50  0000 C CNN
+F 2 "openaa3xx:TACTILE_LED_TH" H 7200 7798 50  0000 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/910/312_TL-6-1571269.pdf" H 7125 7825 50  0001 C CNN
+	1    7125 7775
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	7050 5600 7375 5600
+	6925 7950 6925 7975
 Wire Wire Line
-	7375 5600 7375 5575
-Wire Wire Line
-	7375 5575 7475 5575
-Wire Wire Line
-	7050 5700 7350 5700
-Wire Wire Line
-	7350 5700 7350 5825
-Wire Wire Line
-	7350 5825 7475 5825
-Wire Wire Line
-	7475 5825 7475 5775
+	6925 8150 6925 8075
+$Comp
+L opena3xx-kicad:TLL-6A SW?
+U 1 1 60DBB6E0
+P 7125 8550
+F 0 "SW?" H 7200 8755 50  0000 C CNN
+F 1 "TLL-6A" H 7200 8664 50  0000 C CNN
+F 2 "openaa3xx:TACTILE_LED_TH" H 7200 8573 50  0000 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/910/312_TL-6-1571269.pdf" H 7125 8600 50  0001 C CNN
+	1    7125 8550
+	1    0    0    -1  
+$EndComp
+$Comp
+L opena3xx-kicad:TLL-6A SW?
+U 1 1 60DBB6E6
+P 7125 9325
+F 0 "SW?" H 7200 9530 50  0000 C CNN
+F 1 "TLL-6A" H 7200 9439 50  0000 C CNN
+F 2 "openaa3xx:TACTILE_LED_TH" H 7200 9348 50  0000 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/910/312_TL-6-1571269.pdf" H 7125 9375 50  0001 C CNN
+	1    7125 9325
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	20375 1975 20375 3675
 Wire Bus Line
