@@ -1,0 +1,75 @@
+## OpenA3XX Digital Hardware Controller Board
+
+
+## Design Tools
+
+To open schematics and pcb designs install kicad. Based on your operating system follow the guid here.
+[Setup/Download Here](https://www.kicad.org/)
+
+
+## Versions
+- 0.1 (Implemented using Proteus by Labcentre Electronics)
+- 0.2 (Implemented using Proteus by Labcentre Electronics)
+- 0.3 (Implemented using Proteus by Labcentre Electronics)
+- 0.4 (Implemented using Kicad - Open Source)
+
+## Recommendations
+
+For all passive SMD Components it's recommended that you will buy assorted of all values from Aliexpress.
+All designs will use footprints which are easy for hand soldering i.e. 1206 package type.
+For ICs SOIC packages are used for the same reasons.
+
+
+## Bill of Material
+
+|Reference|Value                       |Footprint                                                 |Datasheet                                                                                               |
+|---------|----------------------------|----------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+|U1       |MCP23017_SO                 |Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm                    |http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf                                           |
+|BUS0     |Conn_02x08_Counter_Clockwise|Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical|~                                                                                                       |
+|BUS1     |Conn_02x08_Counter_Clockwise|Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical|~                                                                                                       |
+|U2       |MCP23017_SO                 |Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm                    |http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf                                           |
+|BUS2     |Conn_02x08_Counter_Clockwise|Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical|~                                                                                                       |
+|U3       |MCP23017_SO                 |Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm                    |http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf                                           |
+|J5       |Raspberry_Pi_Zero           |Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical|https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf|
+|BUS3     |Conn_02x08_Counter_Clockwise|Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical|~                                                                                                       |
+|U4       |MCP23017_SO                 |Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm                    |http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf                                           |
+|BUS4     |Conn_02x08_Counter_Clockwise|Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical|~                                                                                                       |
+|U5       |MCP23017_SO                 |Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm                    |http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf                                           |
+|BUS5     |Conn_02x08_Counter_Clockwise|Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical|~                                                                                                       |
+|U6       |MCP23017_SO                 |Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm                    |http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf                                           |
+|BUS6     |Conn_02x08_Counter_Clockwise|Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical|~                                                                                                       |
+|U7       |MCP23017_SO                 |Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm                    |http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf                                           |
+|BUS7     |Conn_02x08_Counter_Clockwise|Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical|~                                                                                                       |
+|U8       |MCP23017_SO                 |Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm                    |http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf                                           |
+|D1       |GREEN LED                   |Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder     |~                                                                                                       |
+|R1       |470R                        |Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder  |~                                                                                                       |
+|R2       |470R                        |Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder  |~                                                                                                       |
+|D3       |RED LED                     |Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder     |~                                                                                                       |
+|R3       |470R                        |Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder  |~                                                                                                       |
+|R4       |470R                        |Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder  |~                                                                                                       |
+|D4       |ORANGE LED                  |Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder     |~                                                                                                       |
+|D2       |YELLOW LED                  |Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder     |~                                                                                                       |
+|R13      |2.2k                        |Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder  |~                                                                                                       |
+|R14      |2.2k                        |Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder  |~                                                                                                       |
+|C1       |100n                        |Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder |~                                                                                                       |
+|C2       |100n                        |Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder |~                                                                                                       |
+|C3       |100n                        |Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder |~                                                                                                       |
+|C4       |100n                        |Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder |~                                                                                                       |
+|C5       |100n                        |Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder |~                                                                                                       |
+|C6       |100n                        |Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder |~                                                                                                       |
+|C7       |100n                        |Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder |~                                                                                                       |
+|C8       |100n                        |Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder |~                                                                                                       |
+|R6       |10k                         |Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder  |~                                                                                                       |
+|R5       |10k                         |Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder  |~                                                                                                       |
+|R7       |10k                         |Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder  |~                                                                                                       |
+|R8       |10k                         |Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder  |~                                                                                                       |
+|R9       |10k                         |Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder  |~                                                                                                       |
+|R10      |10k                         |Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder  |~                                                                                                       |
+|R11      |10k                         |Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder  |~                                                                                                       |
+|R12      |10k                         |Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder  |~                                                                                                       |
+|J1       |Conn_02x01                  |Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical|~                                                                                                       |
+|J2       |Conn_02x01                  |Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical|~                                                                                                       |
+|J3       |Conn_02x01                  |TerminalBlock:TerminalBlock_bornier-2_P5.08mm             |~                                                                                                       |
+|J4       |Conn_02x01                  |TerminalBlock:TerminalBlock_bornier-2_P5.08mm             |~                                                                                                       |
+|SW1      |SW_MEC_5E                   |Button_Switch_THT:SW_Tactile_Straight_KSL0Axx1LFTR        |http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371                              |
+|R15      |2.2k                        |Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder  |~                                                                                                       |
