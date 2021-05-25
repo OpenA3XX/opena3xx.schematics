@@ -1580,46 +1580,13 @@ Connection ~ 6225 10825
 Connection ~ 6700 10825
 $Comp
 L Connector_Generic:Conn_02x01 J1
-U 1 1 63B465A7
-P 8325 11150
-F 0 "J1" H 8375 11367 50  0000 C CNN
-F 1 "Conn_02x01" H 8375 11276 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8325 11150 50  0001 C CNN
-F 3 "~" H 8325 11150 50  0001 C CNN
-	1    8325 11150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x01 J2
-U 1 1 63B47049
-P 8325 11525
-F 0 "J2" H 8375 11742 50  0000 C CNN
-F 1 "Conn_02x01" H 8375 11651 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8325 11525 50  0001 C CNN
-F 3 "~" H 8325 11525 50  0001 C CNN
-	1    8325 11525
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x01 J3
 U 1 1 63B4C595
 P 9225 11150
-F 0 "J3" H 9275 11367 50  0000 C CNN
+F 0 "J1" H 9275 11367 50  0000 C CNN
 F 1 "Conn_02x01" H 9275 11276 50  0000 C CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9225 11150 50  0001 C CNN
 F 3 "~" H 9225 11150 50  0001 C CNN
 	1    9225 11150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0143
-U 1 1 63BA0E89
-P 7950 10900
-F 0 "#PWR0143" H 7950 10750 50  0001 C CNN
-F 1 "+5V" H 7965 11073 50  0000 C CNN
-F 2 "" H 7950 10900 50  0001 C CNN
-F 3 "" H 7950 10900 50  0001 C CNN
-	1    7950 10900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1634,15 +1601,6 @@ F 3 "" H 8925 10925 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8125 11150 7950 11150
-Wire Wire Line
-	7950 11150 7950 10900
-Wire Wire Line
-	8125 11525 7950 11525
-Wire Wire Line
-	7950 11525 7950 11150
-Connection ~ 7950 11150
-Wire Wire Line
 	8925 10925 8925 11150
 Wire Wire Line
 	8925 11150 9025 11150
@@ -1651,17 +1609,6 @@ Wire Wire Line
 Wire Wire Line
 	8925 11525 8925 11150
 Connection ~ 8925 11150
-$Comp
-L power:GND #PWR0145
-U 1 1 63CF7D16
-P 8750 11725
-F 0 "#PWR0145" H 8750 11475 50  0001 C CNN
-F 1 "GND" H 8755 11552 50  0000 C CNN
-F 2 "" H 8750 11725 50  0001 C CNN
-F 3 "" H 8750 11725 50  0001 C CNN
-	1    8750 11725
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0146
 U 1 1 63CF9021
@@ -1674,15 +1621,6 @@ F 3 "" H 9650 11725 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8750 11725 8750 11525
-Wire Wire Line
-	8750 11525 8625 11525
-Wire Wire Line
-	8750 11525 8750 11150
-Wire Wire Line
-	8750 11150 8625 11150
-Connection ~ 8750 11525
-Wire Wire Line
 	9650 11725 9650 11525
 Wire Wire Line
 	9650 11525 9525 11525
@@ -1692,10 +1630,10 @@ Wire Wire Line
 	9650 11150 9525 11150
 Connection ~ 9650 11525
 $Comp
-L Connector_Generic:Conn_02x01 J4
+L Connector_Generic:Conn_02x01 J2
 U 1 1 63B4C59B
 P 9225 11525
-F 0 "J4" H 9275 11742 50  0000 C CNN
+F 0 "J2" H 9275 11742 50  0000 C CNN
 F 1 "Conn_02x01" H 9275 11651 50  0000 C CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9225 11525 50  0001 C CNN
 F 3 "~" H 9225 11525 50  0001 C CNN
@@ -1706,17 +1644,6 @@ Wire Notes Line
 	7650 11975 7650 10375
 Text Notes 7750 10575 0    50   ~ 0
 Supply Terminal Blocks\n5V & 12V Variable for Backlight\n
-$Comp
-L Switch:SW_MEC_5E SW100
-U 1 1 60A66F25
-P 3525 1625
-F 0 "SW100" H 3525 2010 50  0000 C CNN
-F 1 "SW_MEC_5E" H 3525 1919 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 3525 1925 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 3525 1925 50  0001 C CNN
-	1    3525 1625
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR0147
 U 1 1 60A6870F
@@ -1758,8 +1685,6 @@ Wire Wire Line
 	4225 1525 4225 1225
 Wire Wire Line
 	3125 1900 3125 1525
-Wire Wire Line
-	3125 1525 3250 1525
 Text GLabel 3800 2000 0    50   Output ~ 0
 RESET_SWITCH
 Wire Wire Line
@@ -1783,13 +1708,6 @@ Text GLabel 3775 4950 2    50   Input ~ 0
 RESET_SWITCH
 Wire Wire Line
 	3775 4950 3425 4950
-Wire Wire Line
-	3325 1625 3250 1625
-Wire Wire Line
-	3250 1625 3250 1525
-Connection ~ 3250 1525
-Wire Wire Line
-	3250 1525 3325 1525
 Wire Wire Line
 	3725 1625 3825 1625
 Connection ~ 3825 1625
@@ -2159,10 +2077,10 @@ MCDU LEFT SIDE KEYS\n
 Text Notes 6200 4900 0    50   ~ 0
 MCDU RIGHT SIDE KEYS\n
 $Comp
-L Connector_Generic:Conn_02x01 J6
+L Connector_Generic:Conn_02x01 J3
 U 1 1 60F73FB9
 P 10125 11150
-F 0 "J6" H 10175 11367 50  0000 C CNN
+F 0 "J3" H 10175 11367 50  0000 C CNN
 F 1 "Conn_02x01" H 10175 11276 50  0000 C CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 10125 11150 50  0001 C CNN
 F 3 "~" H 10125 11150 50  0001 C CNN
@@ -2196,10 +2114,10 @@ Wire Wire Line
 	10550 11150 10425 11150
 Connection ~ 10550 11525
 $Comp
-L Connector_Generic:Conn_02x01 J7
+L Connector_Generic:Conn_02x01 J4
 U 1 1 60F73FD5
 P 10125 11525
-F 0 "J7" H 10175 11742 50  0000 C CNN
+F 0 "J4" H 10175 11742 50  0000 C CNN
 F 1 "Conn_02x01" H 10175 11651 50  0000 C CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 10125 11525 50  0001 C CNN
 F 3 "~" H 10125 11525 50  0001 C CNN
@@ -2217,68 +2135,6 @@ F 3 "" H 9825 10925 50  0001 C CNN
 	1    9825 10925
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_02x01 J8
-U 1 1 6105AECB
-P 10975 11150
-F 0 "J8" H 11025 11367 50  0000 C CNN
-F 1 "Conn_02x01" H 11025 11276 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 10975 11150 50  0001 C CNN
-F 3 "~" H 10975 11150 50  0001 C CNN
-	1    10975 11150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10675 11150 10775 11150
-Wire Wire Line
-	10775 11525 10675 11525
-Wire Wire Line
-	10675 11525 10675 11150
-Connection ~ 10675 11150
-$Comp
-L power:GND #PWR0128
-U 1 1 6105AED5
-P 11400 11725
-F 0 "#PWR0128" H 11400 11475 50  0001 C CNN
-F 1 "GND" H 11405 11552 50  0000 C CNN
-F 2 "" H 11400 11725 50  0001 C CNN
-F 3 "" H 11400 11725 50  0001 C CNN
-	1    11400 11725
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11400 11725 11400 11525
-Wire Wire Line
-	11400 11525 11275 11525
-Wire Wire Line
-	11400 11525 11400 11150
-Wire Wire Line
-	11400 11150 11275 11150
-Connection ~ 11400 11525
-$Comp
-L Connector_Generic:Conn_02x01 J9
-U 1 1 6105AEE0
-P 10975 11525
-F 0 "J9" H 11025 11742 50  0000 C CNN
-F 1 "Conn_02x01" H 11025 11651 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 10975 11525 50  0001 C CNN
-F 3 "~" H 10975 11525 50  0001 C CNN
-	1    10975 11525
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR0129
-U 1 1 6105AEE6
-P 10675 10925
-F 0 "#PWR0129" H 10675 10775 50  0001 C CNN
-F 1 "+12V" H 10690 11098 50  0000 C CNN
-F 2 "" H 10675 10925 50  0001 C CNN
-F 3 "" H 10675 10925 50  0001 C CNN
-	1    10675 10925
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10675 10925 10675 11150
 Wire Notes Line
 	11650 10375 11650 11975
 Wire Notes Line
@@ -6290,6 +6146,139 @@ Annunciators Lights
 NoConn ~ 19925 2475
 NoConn ~ 19925 2575
 NoConn ~ 19925 2675
+Wire Wire Line
+	3250 1525 3325 1525
+Connection ~ 3250 1525
+Wire Wire Line
+	3250 1625 3250 1525
+Wire Wire Line
+	3325 1625 3250 1625
+Wire Wire Line
+	3125 1525 3250 1525
+$Comp
+L Switch:SW_MEC_5E SW100
+U 1 1 60A66F25
+P 3525 1625
+F 0 "SW100" H 3525 2010 50  0000 C CNN
+F 1 "SW_MEC_5E" H 3525 1919 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 3525 1925 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 3525 1925 50  0001 C CNN
+	1    3525 1625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_MEC_5E SW73
+U 1 1 60C5FAF8
+P 14525 11150
+F 0 "SW73" H 14525 11535 50  0000 C CNN
+F 1 "SW_MEC_5E" H 14525 11444 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 14525 11450 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 14525 11450 50  0001 C CNN
+	1    14525 11150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x01 J5
+U 1 1 60F77B96
+P 14475 10625
+F 0 "J5" H 14525 10842 50  0000 C CNN
+F 1 "Conn_02x01" H 14525 10751 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 14475 10625 50  0001 C CNN
+F 3 "~" H 14475 10625 50  0001 C CNN
+	1    14475 10625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14275 10625 14175 10625
+Wire Wire Line
+	14175 10625 14175 11050
+Wire Wire Line
+	14175 11050 14325 11050
+Wire Wire Line
+	14775 10625 14825 10625
+Wire Wire Line
+	14825 10625 14825 11050
+Wire Wire Line
+	14825 11050 14725 11050
+Wire Wire Line
+	14175 11050 14175 11150
+Wire Wire Line
+	14175 11150 14325 11150
+Connection ~ 14175 11050
+Wire Wire Line
+	14725 11150 14825 11150
+Wire Wire Line
+	14825 11150 14825 11050
+Connection ~ 14825 11050
+$Comp
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW71
+U 1 1 61EBD1D6
+P 15925 10625
+F 0 "SW71" H 16000 10830 50  0000 C CNN
+F 1 "TLL-6A" H 16000 10739 50  0000 C CNN
+F 2 "openaa3xx:TACTILE_LED_TH" H 16000 10648 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/910/312_TL-6-1571269.pdf" H 15925 10675 50  0001 C CNN
+F 4 "BRT" H 15925 10625 50  0000 C CNN "MCDU IO Name"
+	1    15925 10625
+	1    0    0    -1  
+$EndComp
+$Comp
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW72
+U 1 1 61F8A2B8
+P 16875 10625
+F 0 "SW72" H 16950 10830 50  0000 C CNN
+F 1 "TLL-6A" H 16950 10739 50  0000 C CNN
+F 2 "openaa3xx:TACTILE_LED_TH" H 16950 10648 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/910/312_TL-6-1571269.pdf" H 16875 10675 50  0001 C CNN
+F 4 "DIM" H 16875 10625 50  0000 C CNN "MCDU IO Name"
+	1    16875 10625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16275 10925 16675 10925
+$Comp
+L Device:R_Small R?
+U 1 1 6278A1A9
+P 17450 11125
+F 0 "R?" H 17509 11171 50  0000 L CNN
+F 1 "220R" H 17509 11080 50  0000 L CNN
+F 2 "Resistor_SMD:R_1210_3225Metric_Pad1.30x2.65mm_HandSolder" H 17450 11125 50  0001 C CNN
+F 3 "~" H 17450 11125 50  0001 C CNN
+	1    17450 11125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17225 10925 17450 10925
+Wire Wire Line
+	17450 10925 17450 11025
+$Comp
+L power:GND #PWR?
+U 1 1 628589E0
+P 17450 11425
+F 0 "#PWR?" H 17450 11175 50  0001 C CNN
+F 1 "GND" H 17455 11252 50  0000 C CNN
+F 2 "" H 17450 11425 50  0001 C CNN
+F 3 "" H 17450 11425 50  0001 C CNN
+	1    17450 11425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17450 11225 17450 11425
+$Comp
+L power:+12V #PWR?
+U 1 1 6292907A
+P 15500 10825
+F 0 "#PWR?" H 15500 10675 50  0001 C CNN
+F 1 "+12V" H 15515 10998 50  0001 C CNN
+F 2 "" H 15500 10825 50  0001 C CNN
+F 3 "" H 15500 10825 50  0001 C CNN
+	1    15500 10825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15500 10825 15500 10925
+Wire Wire Line
+	15500 10925 15725 10925
 Wire Bus Line
 	20850 5125 20850 10300
 Wire Bus Line

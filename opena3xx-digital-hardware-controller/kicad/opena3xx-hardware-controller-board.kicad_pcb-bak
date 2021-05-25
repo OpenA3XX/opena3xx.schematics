@@ -3736,7 +3736,7 @@
   (gr_text "INT-B0\n" (at 74.2 93.8 90) (layer F.SilkS)
     (effects (font (size 1 0.8) (thickness 0.15)))
   )
-  (gr_text "OPENA3XX - Digital Hardware Controller Board v 0.4" (at 61.2 101 270) (layer F.SilkS)
+  (gr_text "OPENA3XX - Digital Hardware Controller Board v 0.41" (at 61.2 101 -90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text "GND\n" (at 62 140.2 270) (layer F.SilkS) (tstamp 60937EDB)

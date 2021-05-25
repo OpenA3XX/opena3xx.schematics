@@ -1580,46 +1580,13 @@ Connection ~ 6225 10825
 Connection ~ 6700 10825
 $Comp
 L Connector_Generic:Conn_02x01 J1
-U 1 1 63B465A7
-P 8325 11150
-F 0 "J1" H 8375 11367 50  0000 C CNN
-F 1 "Conn_02x01" H 8375 11276 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8325 11150 50  0001 C CNN
-F 3 "~" H 8325 11150 50  0001 C CNN
-	1    8325 11150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x01 J2
-U 1 1 63B47049
-P 8325 11525
-F 0 "J2" H 8375 11742 50  0000 C CNN
-F 1 "Conn_02x01" H 8375 11651 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8325 11525 50  0001 C CNN
-F 3 "~" H 8325 11525 50  0001 C CNN
-	1    8325 11525
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x01 J3
 U 1 1 63B4C595
 P 9225 11150
-F 0 "J3" H 9275 11367 50  0000 C CNN
+F 0 "J1" H 9275 11367 50  0000 C CNN
 F 1 "Conn_02x01" H 9275 11276 50  0000 C CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9225 11150 50  0001 C CNN
 F 3 "~" H 9225 11150 50  0001 C CNN
 	1    9225 11150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0143
-U 1 1 63BA0E89
-P 7950 10900
-F 0 "#PWR0143" H 7950 10750 50  0001 C CNN
-F 1 "+5V" H 7965 11073 50  0000 C CNN
-F 2 "" H 7950 10900 50  0001 C CNN
-F 3 "" H 7950 10900 50  0001 C CNN
-	1    7950 10900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1634,15 +1601,6 @@ F 3 "" H 8925 10925 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8125 11150 7950 11150
-Wire Wire Line
-	7950 11150 7950 10900
-Wire Wire Line
-	8125 11525 7950 11525
-Wire Wire Line
-	7950 11525 7950 11150
-Connection ~ 7950 11150
-Wire Wire Line
 	8925 10925 8925 11150
 Wire Wire Line
 	8925 11150 9025 11150
@@ -1651,17 +1609,6 @@ Wire Wire Line
 Wire Wire Line
 	8925 11525 8925 11150
 Connection ~ 8925 11150
-$Comp
-L power:GND #PWR0145
-U 1 1 63CF7D16
-P 8750 11725
-F 0 "#PWR0145" H 8750 11475 50  0001 C CNN
-F 1 "GND" H 8755 11552 50  0000 C CNN
-F 2 "" H 8750 11725 50  0001 C CNN
-F 3 "" H 8750 11725 50  0001 C CNN
-	1    8750 11725
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0146
 U 1 1 63CF9021
@@ -1674,15 +1621,6 @@ F 3 "" H 9650 11725 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8750 11725 8750 11525
-Wire Wire Line
-	8750 11525 8625 11525
-Wire Wire Line
-	8750 11525 8750 11150
-Wire Wire Line
-	8750 11150 8625 11150
-Connection ~ 8750 11525
-Wire Wire Line
 	9650 11725 9650 11525
 Wire Wire Line
 	9650 11525 9525 11525
@@ -1692,10 +1630,10 @@ Wire Wire Line
 	9650 11150 9525 11150
 Connection ~ 9650 11525
 $Comp
-L Connector_Generic:Conn_02x01 J4
+L Connector_Generic:Conn_02x01 J2
 U 1 1 63B4C59B
 P 9225 11525
-F 0 "J4" H 9275 11742 50  0000 C CNN
+F 0 "J2" H 9275 11742 50  0000 C CNN
 F 1 "Conn_02x01" H 9275 11651 50  0000 C CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9225 11525 50  0001 C CNN
 F 3 "~" H 9225 11525 50  0001 C CNN
@@ -1807,7 +1745,7 @@ Wire Notes Line
 Wire Notes Line
 	20625 725  20625 4725
 $Comp
-L opena3xx-kicad:TLL-6A SW7
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW7
 U 1 1 60DBB6C4
 P 6750 5125
 F 0 "SW7" H 6825 5330 50  0000 C CNN
@@ -1819,7 +1757,7 @@ F 4 "RSK1" H 6750 5125 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW8
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW8
 U 1 1 60DBB6CC
 P 6750 5900
 F 0 "SW8" H 6825 6105 50  0000 C CNN
@@ -1831,7 +1769,7 @@ F 4 "RSK2" H 6750 5900 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW9
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW9
 U 1 1 60DBB6D2
 P 6750 6675
 F 0 "SW9" H 6825 6880 50  0000 C CNN
@@ -1879,7 +1817,7 @@ $EndComp
 Wire Wire Line
 	7375 7425 7375 7275
 $Comp
-L opena3xx-kicad:TLL-6A SW10
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW10
 U 1 1 60ED204D
 P 6750 7750
 F 0 "SW10" H 6825 7955 50  0000 C CNN
@@ -1891,7 +1829,7 @@ F 4 "RSK4" H 6750 7750 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW11
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW11
 U 1 1 60ED2053
 P 6750 8525
 F 0 "SW11" H 6825 8730 50  0000 C CNN
@@ -1903,7 +1841,7 @@ F 4 "RSK5" H 6750 8525 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW12
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW12
 U 1 1 60ED2059
 P 6750 9300
 F 0 "SW12" H 6825 9505 50  0000 C CNN
@@ -2011,7 +1949,7 @@ F 3 "~" H 6025 9800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW6
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW6
 U 1 1 60ED2047
 P 5400 9300
 F 0 "SW6" H 5475 9505 50  0000 C CNN
@@ -2023,7 +1961,7 @@ F 4 "LSK6" H 5400 9300 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW5
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW5
 U 1 1 60ED2041
 P 5400 8525
 F 0 "SW5" H 5475 8730 50  0000 C CNN
@@ -2035,7 +1973,7 @@ F 4 "LSK5" H 5400 8525 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW4
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW4
 U 1 1 60ED203B
 P 5400 7750
 F 0 "SW4" H 5475 7955 50  0000 C CNN
@@ -2107,7 +2045,7 @@ F 3 "~" H 6025 7175 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW3
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW3
 U 1 1 60D94963
 P 5400 6675
 F 0 "SW3" H 5475 6880 50  0000 C CNN
@@ -2119,7 +2057,7 @@ F 4 "LSK3" H 5400 6675 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW2
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW2
 U 1 1 60D933F5
 P 5400 5900
 F 0 "SW2" H 5475 6105 50  0000 C CNN
@@ -2131,7 +2069,7 @@ F 4 "LSK2" H 5400 5900 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW1
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW1
 U 1 1 60C7550B
 P 5400 5125
 F 0 "SW1" H 5475 5330 50  0000 C CNN
@@ -2159,10 +2097,10 @@ MCDU LEFT SIDE KEYS\n
 Text Notes 6200 4900 0    50   ~ 0
 MCDU RIGHT SIDE KEYS\n
 $Comp
-L Connector_Generic:Conn_02x01 J6
+L Connector_Generic:Conn_02x01 J3
 U 1 1 60F73FB9
 P 10125 11150
-F 0 "J6" H 10175 11367 50  0000 C CNN
+F 0 "J3" H 10175 11367 50  0000 C CNN
 F 1 "Conn_02x01" H 10175 11276 50  0000 C CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 10125 11150 50  0001 C CNN
 F 3 "~" H 10125 11150 50  0001 C CNN
@@ -2196,10 +2134,10 @@ Wire Wire Line
 	10550 11150 10425 11150
 Connection ~ 10550 11525
 $Comp
-L Connector_Generic:Conn_02x01 J7
+L Connector_Generic:Conn_02x01 J4
 U 1 1 60F73FD5
 P 10125 11525
-F 0 "J7" H 10175 11742 50  0000 C CNN
+F 0 "J4" H 10175 11742 50  0000 C CNN
 F 1 "Conn_02x01" H 10175 11651 50  0000 C CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 10125 11525 50  0001 C CNN
 F 3 "~" H 10125 11525 50  0001 C CNN
@@ -2217,68 +2155,6 @@ F 3 "" H 9825 10925 50  0001 C CNN
 	1    9825 10925
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_02x01 J8
-U 1 1 6105AECB
-P 10975 11150
-F 0 "J8" H 11025 11367 50  0000 C CNN
-F 1 "Conn_02x01" H 11025 11276 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 10975 11150 50  0001 C CNN
-F 3 "~" H 10975 11150 50  0001 C CNN
-	1    10975 11150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10675 11150 10775 11150
-Wire Wire Line
-	10775 11525 10675 11525
-Wire Wire Line
-	10675 11525 10675 11150
-Connection ~ 10675 11150
-$Comp
-L power:GND #PWR0128
-U 1 1 6105AED5
-P 11400 11725
-F 0 "#PWR0128" H 11400 11475 50  0001 C CNN
-F 1 "GND" H 11405 11552 50  0000 C CNN
-F 2 "" H 11400 11725 50  0001 C CNN
-F 3 "" H 11400 11725 50  0001 C CNN
-	1    11400 11725
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11400 11725 11400 11525
-Wire Wire Line
-	11400 11525 11275 11525
-Wire Wire Line
-	11400 11525 11400 11150
-Wire Wire Line
-	11400 11150 11275 11150
-Connection ~ 11400 11525
-$Comp
-L Connector_Generic:Conn_02x01 J9
-U 1 1 6105AEE0
-P 10975 11525
-F 0 "J9" H 11025 11742 50  0000 C CNN
-F 1 "Conn_02x01" H 11025 11651 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 10975 11525 50  0001 C CNN
-F 3 "~" H 10975 11525 50  0001 C CNN
-	1    10975 11525
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR0129
-U 1 1 6105AEE6
-P 10675 10925
-F 0 "#PWR0129" H 10675 10775 50  0001 C CNN
-F 1 "+12V" H 10690 11098 50  0000 C CNN
-F 2 "" H 10675 10925 50  0001 C CNN
-F 3 "" H 10675 10925 50  0001 C CNN
-	1    10675 10925
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10675 10925 10675 11150
 Wire Notes Line
 	11650 10375 11650 11975
 Wire Notes Line
@@ -2639,7 +2515,7 @@ Connection ~ 9825 11000
 Wire Wire Line
 	9825 11000 9825 11150
 $Comp
-L opena3xx-kicad:TLL-6A SW19
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW19
 U 1 1 60A53860
 P 9725 5125
 F 0 "SW19" H 9800 5330 50  0000 C CNN
@@ -2651,7 +2527,7 @@ F 4 "RAD NAV" H 9725 5125 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW20
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW20
 U 1 1 60A53866
 P 9725 5900
 F 0 "SW20" H 9800 6105 50  0000 C CNN
@@ -2663,7 +2539,7 @@ F 4 "FUEL PRED" H 9725 5900 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW21
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW21
 U 1 1 60A5386C
 P 9725 6675
 F 0 "SW21" H 9800 6880 50  0000 C CNN
@@ -2711,7 +2587,7 @@ $EndComp
 Wire Wire Line
 	10350 7425 10350 7275
 $Comp
-L opena3xx-kicad:TLL-6A SW22
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW22
 U 1 1 60A53885
 P 9725 7750
 F 0 "SW22" H 9800 7955 50  0000 C CNN
@@ -2723,7 +2599,7 @@ F 4 "ATC COMM" H 9725 7750 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW23
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW23
 U 1 1 60A5388B
 P 9725 8525
 F 0 "SW23" H 9800 8730 50  0000 C CNN
@@ -2735,7 +2611,7 @@ F 4 "MCDU MENU" H 9725 8525 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW24
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW24
 U 1 1 60A53891
 P 9725 9300
 F 0 "SW24" H 9800 9505 50  0000 C CNN
@@ -2843,7 +2719,7 @@ F 3 "~" H 9000 9800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW18
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW18
 U 1 1 60A538C9
 P 8375 9300
 F 0 "SW18" H 8450 9505 50  0000 C CNN
@@ -2855,7 +2731,7 @@ F 4 "F-PLAN" H 8375 9300 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW17
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW17
 U 1 1 60A538CF
 P 8375 8525
 F 0 "SW17" H 8450 8730 50  0000 C CNN
@@ -2867,7 +2743,7 @@ F 4 "DATA" H 8375 8525 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW16
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW16
 U 1 1 60A538D5
 P 8375 7750
 F 0 "SW16" H 8450 7955 50  0000 C CNN
@@ -2939,7 +2815,7 @@ F 3 "~" H 9000 7175 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW15
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW15
 U 1 1 60A538FA
 P 8375 6675
 F 0 "SW15" H 8450 6880 50  0000 C CNN
@@ -2951,7 +2827,7 @@ F 4 "PERF" H 8375 6675 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW14
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW14
 U 1 1 60A53900
 P 8375 5900
 F 0 "SW14" H 8450 6105 50  0000 C CNN
@@ -2963,7 +2839,7 @@ F 4 "PROG" H 8375 5900 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW13
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW13
 U 1 1 60A53906
 P 8375 5125
 F 0 "SW13" H 8450 5330 50  0000 C CNN
@@ -3319,7 +3195,7 @@ Wire Wire Line
 Wire Wire Line
 	7900 8100 7900 8050
 $Comp
-L opena3xx-kicad:TLL-6A SW31
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW31
 U 1 1 60B4B7F9
 P 12700 5125
 F 0 "SW31" H 12775 5330 50  0000 C CNN
@@ -3331,7 +3207,7 @@ F 4 "DIGIT_7" H 12700 5125 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW32
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW32
 U 1 1 60B4B7FF
 P 12700 5900
 F 0 "SW32" H 12775 6105 50  0000 C CNN
@@ -3343,7 +3219,7 @@ F 4 "DIGIT_8" H 12700 5900 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW33
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW33
 U 1 1 60B4B805
 P 12700 6675
 F 0 "SW33" H 12775 6880 50  0000 C CNN
@@ -3391,7 +3267,7 @@ $EndComp
 Wire Wire Line
 	13325 7425 13325 7275
 $Comp
-L opena3xx-kicad:TLL-6A SW34
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW34
 U 1 1 60B4B81E
 P 12700 7750
 F 0 "SW34" H 12775 7955 50  0000 C CNN
@@ -3403,7 +3279,7 @@ F 4 "DOT" H 12700 7750 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW35
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW35
 U 1 1 60B4B824
 P 12700 8525
 F 0 "SW35" H 12775 8730 50  0000 C CNN
@@ -3415,7 +3291,7 @@ F 4 "DIGIT_0" H 12700 8525 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW36
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW36
 U 1 1 60B4B82A
 P 12700 9300
 F 0 "SW36" H 12775 9505 50  0000 C CNN
@@ -3523,7 +3399,7 @@ F 3 "~" H 11975 9800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW30
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW30
 U 1 1 60B4B862
 P 11350 9300
 F 0 "SW30" H 11425 9505 50  0000 C CNN
@@ -3535,7 +3411,7 @@ F 4 "DIGIT_6" H 11350 9300 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW29
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW29
 U 1 1 60B4B868
 P 11350 8525
 F 0 "SW29" H 11425 8730 50  0000 C CNN
@@ -3547,7 +3423,7 @@ F 4 "DIGIT_5" H 11350 8525 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW28
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW28
 U 1 1 60B4B86E
 P 11350 7750
 F 0 "SW28" H 11425 7955 50  0000 C CNN
@@ -3619,7 +3495,7 @@ F 3 "~" H 11975 7175 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW27
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW27
 U 1 1 60B4B893
 P 11350 6675
 F 0 "SW27" H 11425 6880 50  0000 C CNN
@@ -3631,7 +3507,7 @@ F 4 "DIGIT_3" H 11350 6675 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW26
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW26
 U 1 1 60B4B899
 P 11350 5900
 F 0 "SW26" H 11425 6105 50  0000 C CNN
@@ -3643,7 +3519,7 @@ F 4 "DIGIT_2" H 11350 5900 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW25
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW25
 U 1 1 60B4B89F
 P 11350 5125
 F 0 "SW25" H 11425 5330 50  0000 C CNN
@@ -4023,7 +3899,7 @@ Wire Notes Line
 Wire Notes Line
 	5075 11975 5075 10375
 $Comp
-L opena3xx-kicad:TLL-6A SW43
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW43
 U 1 1 610F9843
 P 15650 5125
 F 0 "SW43" H 15725 5330 50  0000 C CNN
@@ -4035,7 +3911,7 @@ F 4 "ALPHA_G" H 15650 5125 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW44
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW44
 U 1 1 610F984A
 P 15650 5900
 F 0 "SW44" H 15725 6105 50  0000 C CNN
@@ -4047,7 +3923,7 @@ F 4 "ALPHA_H" H 15650 5900 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW45
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW45
 U 1 1 610F9851
 P 15650 6675
 F 0 "SW45" H 15725 6880 50  0000 C CNN
@@ -4095,7 +3971,7 @@ $EndComp
 Wire Wire Line
 	16275 7425 16275 7275
 $Comp
-L opena3xx-kicad:TLL-6A SW46
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW46
 U 1 1 610F986B
 P 15650 7750
 F 0 "SW46" H 15725 7955 50  0000 C CNN
@@ -4107,7 +3983,7 @@ F 4 "ALPHA_J" H 15650 7750 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW47
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW47
 U 1 1 610F9872
 P 15650 8525
 F 0 "SW47" H 15725 8730 50  0000 C CNN
@@ -4119,7 +3995,7 @@ F 4 "ALPHA_K" H 15650 8525 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW48
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW48
 U 1 1 610F9879
 P 15650 9300
 F 0 "SW48" H 15725 9505 50  0000 C CNN
@@ -4227,7 +4103,7 @@ F 3 "~" H 14925 9800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW42
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW42
 U 1 1 610F98B2
 P 14300 9300
 F 0 "SW42" H 14375 9505 50  0000 C CNN
@@ -4239,7 +4115,7 @@ F 4 "ALPHA_F" H 14300 9300 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW41
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW41
 U 1 1 610F98B9
 P 14300 8525
 F 0 "SW41" H 14375 8730 50  0000 C CNN
@@ -4251,7 +4127,7 @@ F 4 "ALPHA_E" H 14300 8525 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW40
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW40
 U 1 1 610F98C0
 P 14300 7750
 F 0 "SW40" H 14375 7955 50  0000 C CNN
@@ -4323,7 +4199,7 @@ F 3 "~" H 14925 7175 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW39
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW39
 U 1 1 610F98E6
 P 14300 6675
 F 0 "SW39" H 14375 6880 50  0000 C CNN
@@ -4335,7 +4211,7 @@ F 4 "ALPHA_C" H 14300 6675 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW38
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW38
 U 1 1 610F98ED
 P 14300 5900
 F 0 "SW38" H 14375 6105 50  0000 C CNN
@@ -4347,7 +4223,7 @@ F 4 "ALPHA_B" H 14300 5900 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW37
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW37
 U 1 1 610F98F4
 P 14300 5125
 F 0 "SW37" H 14375 5330 50  0000 C CNN
@@ -4699,7 +4575,7 @@ Wire Wire Line
 Wire Notes Line
 	7650 10375 11650 10375
 $Comp
-L opena3xx-kicad:TLL-6A SW55
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW55
 U 1 1 6151CF50
 P 18525 5175
 F 0 "SW55" H 18600 5380 50  0000 C CNN
@@ -4711,7 +4587,7 @@ F 4 "ALPHA_S" H 18525 5175 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW56
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW56
 U 1 1 6151CF57
 P 18525 5950
 F 0 "SW56" H 18600 6155 50  0000 C CNN
@@ -4723,7 +4599,7 @@ F 4 "ALPHA_T" H 18525 5950 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW57
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW57
 U 1 1 6151CF5E
 P 18525 6725
 F 0 "SW57" H 18600 6930 50  0000 C CNN
@@ -4771,7 +4647,7 @@ $EndComp
 Wire Wire Line
 	19150 7475 19150 7325
 $Comp
-L opena3xx-kicad:TLL-6A SW58
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW58
 U 1 1 6151CF78
 P 18525 7800
 F 0 "SW58" H 18600 8005 50  0000 C CNN
@@ -4783,7 +4659,7 @@ F 4 "ALPHA_V" H 18525 7800 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW59
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW59
 U 1 1 6151CF7F
 P 18525 8575
 F 0 "SW59" H 18600 8780 50  0000 C CNN
@@ -4795,7 +4671,7 @@ F 4 "ALPHA_W" H 18525 8575 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW60
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW60
 U 1 1 6151CF86
 P 18525 9350
 F 0 "SW60" H 18600 9555 50  0000 C CNN
@@ -4903,7 +4779,7 @@ F 3 "~" H 17800 9850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW54
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW54
 U 1 1 6151CFBF
 P 17175 9350
 F 0 "SW54" H 17250 9555 50  0000 C CNN
@@ -4915,7 +4791,7 @@ F 4 "ALPHA_R" H 17175 9350 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW53
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW53
 U 1 1 6151CFC6
 P 17175 8575
 F 0 "SW53" H 17250 8780 50  0000 C CNN
@@ -4927,7 +4803,7 @@ F 4 "ALPHA_Q" H 17175 8575 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW52
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW52
 U 1 1 6151CFCD
 P 17175 7800
 F 0 "SW52" H 17250 8005 50  0000 C CNN
@@ -4999,7 +4875,7 @@ F 3 "~" H 17800 7225 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW51
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW51
 U 1 1 6151CFF3
 P 17175 6725
 F 0 "SW51" H 17250 6930 50  0000 C CNN
@@ -5011,7 +4887,7 @@ F 4 "ALPHA_O" H 17175 6725 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW50
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW50
 U 1 1 6151CFFA
 P 17175 5950
 F 0 "SW50" H 17250 6155 50  0000 C CNN
@@ -5023,7 +4899,7 @@ F 4 "ALPHA_N" H 17175 5950 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW49
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW49
 U 1 1 6151D001
 P 17175 5175
 F 0 "SW49" H 17250 5380 50  0000 C CNN
@@ -5371,7 +5247,7 @@ Wire Wire Line
 Wire Wire Line
 	17750 6100 17750 6125
 $Comp
-L opena3xx-kicad:TLL-6A SW67
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW67
 U 1 1 615F8919
 P 21425 5175
 F 0 "SW67" H 21500 5380 50  0000 C CNN
@@ -5383,7 +5259,7 @@ F 4 "UP" H 21425 5175 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW68
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW68
 U 1 1 615F8920
 P 21425 5950
 F 0 "SW68" H 21500 6155 50  0000 C CNN
@@ -5395,7 +5271,7 @@ F 4 "DOWN" H 21425 5950 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW69
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW69
 U 1 1 615F8927
 P 21425 6725
 F 0 "SW69" H 21500 6930 50  0000 C CNN
@@ -5443,7 +5319,7 @@ $EndComp
 Wire Wire Line
 	22050 7475 22050 7325
 $Comp
-L opena3xx-kicad:TLL-6A SW70
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW70
 U 1 1 615F8941
 P 21425 7800
 F 0 "SW70" H 21500 8005 50  0000 C CNN
@@ -5527,7 +5403,7 @@ F 3 "~" H 20700 9850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW66
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW66
 U 1 1 615F8988
 P 20075 9350
 F 0 "SW66" H 20150 9555 50  0000 C CNN
@@ -5539,7 +5415,7 @@ F 4 "CLR" H 20075 9350 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW65
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW65
 U 1 1 615F898F
 P 20075 8575
 F 0 "SW65" H 20150 8780 50  0000 C CNN
@@ -5551,7 +5427,7 @@ F 4 "OVFY" H 20075 8575 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW64
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW64
 U 1 1 615F8996
 P 20075 7800
 F 0 "SW64" H 20150 8005 50  0000 C CNN
@@ -5623,7 +5499,7 @@ F 3 "~" H 20700 7225 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW63
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW63
 U 1 1 615F89BC
 P 20075 6725
 F 0 "SW63" H 20150 6930 50  0000 C CNN
@@ -5635,7 +5511,7 @@ F 4 "SLASH" H 20075 6725 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW62
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW62
 U 1 1 615F89C3
 P 20075 5950
 F 0 "SW62" H 20150 6155 50  0000 C CNN
@@ -5647,7 +5523,7 @@ F 4 "ALPHA_Z" H 20075 5950 50  0000 C CNN "MCDU IO Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L opena3xx-kicad:TLL-6A SW61
+L opena3xx-mcdu-rescue:TLL-6A-opena3xx-kicad SW61
 U 1 1 615F89CA
 P 20075 5175
 F 0 "SW61" H 20150 5380 50  0000 C CNN
