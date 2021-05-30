@@ -467,7 +467,7 @@
   )
 
   (module openaa3xx:logo (layer F.Cu) (tedit 0) (tstamp 60B46037)
-    (at 201.549 45.6692)
+    (at 245.745 141.1732)
     (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
     )
