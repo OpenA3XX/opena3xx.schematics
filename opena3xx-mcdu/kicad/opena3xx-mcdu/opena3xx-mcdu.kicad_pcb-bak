@@ -6625,7 +6625,7 @@
     (fp_text reference D5 (at 0 -1.82) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value "FM1 - Amber LED" (at 0 1.82) (layer B.SilkS)
+    (fp_text value "FM1 - Amber LED" (at 0 1.82) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 2.45 1.12) (end -2.45 1.12) (layer F.CrtYd) (width 0.05))
