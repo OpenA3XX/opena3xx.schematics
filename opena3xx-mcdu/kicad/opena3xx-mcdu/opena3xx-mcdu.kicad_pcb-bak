@@ -1989,6 +1989,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KISYS3DMOD}/Button_Switch_THT.3dshapes/SW_PUSH_6mm_H7.3mm.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module openaa3xx:TACTILE_LED_TH (layer F.Cu) (tedit 60B24432) (tstamp 60A19913)
