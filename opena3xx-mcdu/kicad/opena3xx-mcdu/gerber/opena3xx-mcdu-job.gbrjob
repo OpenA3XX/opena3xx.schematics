@@ -7,7 +7,7 @@
       "Application": "Pcbnew",
       "Version":     "(5.1.9)-1"
     },
-    "CreationDate":  "2021-06-15T23:19:55+02:00"
+    "CreationDate":  "2021-06-21T17:11:14+02:00"
   },
   "GeneralSpecs":
   {
@@ -31,7 +31,8 @@
       "Layers": "Outer",
       "PadToPad":  0.200,
       "PadToTrack":  0.200,
-      "TrackToTrack":  0.200
+      "TrackToTrack":  0.200,
+      "MinLineWidth":  0.250
     }
   ],
   "FilesAttributes":
@@ -44,6 +45,16 @@
     {
       "Path":  "opena3xx-mcdu-B_Cu.gbr",
       "FileFunction":  "Copper,L2,Bot",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "opena3xx-mcdu-F_Adhes.gbr",
+      "FileFunction":  "Glue,Top",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "opena3xx-mcdu-B_Adhes.gbr",
+      "FileFunction":  "Glue,Bot",
       "FilePolarity":  "Positive"
     },
     {
@@ -79,6 +90,16 @@
     {
       "Path":  "opena3xx-mcdu-Edge_Cuts.gbr",
       "FileFunction":  "Profile",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "opena3xx-mcdu-F_Fab.gbr",
+      "FileFunction":  "AssemblyDrawing,Top",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "opena3xx-mcdu-B_Fab.gbr",
+      "FileFunction":  "AssemblyDrawing,Bot",
       "FilePolarity":  "Positive"
     }
   ],
