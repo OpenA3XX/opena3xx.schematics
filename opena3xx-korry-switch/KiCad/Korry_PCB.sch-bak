@@ -1,0 +1,140 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Korry Switch PCB"
+Date "07th June 2021"
+Rev "V1"
+Comp "OpenA3XX"
+Comment1 "Jak Kav"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L My_Library:S775-1 U1
+U 1 1 60BEAAE9
+P 5750 2800
+F 0 "U1" H 5878 1721 50  0000 L CNN
+F 1 "S775-1" H 5878 1630 50  0000 L CNN
+F 2 "My_Libary:6pin_Push_Button_Switch" H 5950 1100 50  0001 C CNN
+F 3 "" H 5950 1100 50  0001 C CNN
+	1    5750 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 60BEC6DA
+P 4200 3000
+F 0 "R1" H 4270 3046 50  0000 L CNN
+F 1 "270" H 4270 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4130 3000 50  0001 C CNN
+F 3 "~" H 4200 3000 50  0001 C CNN
+	1    4200 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 60BEDAB4
+P 6850 3050
+F 0 "R2" H 6920 3096 50  0000 L CNN
+F 1 "270" H 6920 3005 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 6780 3050 50  0001 C CNN
+F 3 "~" H 6850 3050 50  0001 C CNN
+	1    6850 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 60BEEBFE
+P 4750 3200
+F 0 "D1" V 4697 3280 50  0000 L CNN
+F 1 "LED" V 4788 3280 50  0000 L CNN
+F 2 "LED_THT:LED_Rectangular_W3.0mm_H2.0mm" H 4750 3200 50  0001 C CNN
+F 3 "~" H 4750 3200 50  0001 C CNN
+	1    4750 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 60BEFB79
+P 6250 3200
+F 0 "D2" H 6243 3417 50  0000 C CNN
+F 1 "LED" H 6243 3326 50  0000 C CNN
+F 2 "LED_THT:LED_Rectangular_W3.0mm_H2.0mm" H 6250 3200 50  0001 C CNN
+F 3 "~" H 6250 3200 50  0001 C CNN
+	1    6250 3200
+	0    1    1    0   
+$EndComp
+NoConn ~ 5700 3350
+NoConn ~ 5700 4500
+NoConn ~ 5600 3350
+NoConn ~ 5500 3350
+Wire Wire Line
+	5500 4500 5500 4700
+Wire Wire Line
+	5500 4700 5050 4700
+Wire Wire Line
+	5600 4500 5600 4750
+Wire Wire Line
+	5600 4750 5450 4750
+Wire Wire Line
+	4200 5250 4200 3150
+Wire Wire Line
+	4200 2850 4500 2850
+Wire Wire Line
+	4500 2850 4500 3350
+Wire Wire Line
+	4500 3350 4750 3350
+Wire Wire Line
+	4750 3050 5950 3050
+Wire Wire Line
+	5950 3050 5950 3700
+Wire Wire Line
+	5950 3700 6250 3700
+Connection ~ 5950 3050
+Wire Wire Line
+	5950 3050 6250 3050
+Wire Wire Line
+	6850 2900 6600 2900
+Wire Wire Line
+	6600 2900 6600 3350
+Wire Wire Line
+	6600 3350 6250 3350
+Wire Wire Line
+	6850 5250 6850 3200
+$Comp
+L Connector_Generic_MountingPin:Conn_01x05_MountingPin J1
+U 1 1 60C06EBA
+P 5600 5500
+F 0 "J1" V 5476 5780 50  0000 L CNN
+F 1 "Conn_01x05_MountingPin" V 5567 5780 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 5600 5500 50  0001 C CNN
+F 3 "~" H 5600 5500 50  0001 C CNN
+	1    5600 5500
+	0    1    1    0   
+$EndComp
+NoConn ~ 5200 5500
+Wire Wire Line
+	5400 5300 5050 5300
+Wire Wire Line
+	5050 4700 5050 5300
+Wire Wire Line
+	4200 5250 5600 5250
+Wire Wire Line
+	5600 5250 5600 5300
+Wire Wire Line
+	5450 5300 5500 5300
+Wire Wire Line
+	5450 4750 5450 5300
+Wire Wire Line
+	6250 5300 5800 5300
+Wire Wire Line
+	6250 3700 6250 5300
+Wire Wire Line
+	6850 5250 5700 5250
+Wire Wire Line
+	5700 5250 5700 5300
+$EndSCHEMATC
