@@ -1,4 +1,4 @@
-19084175268259982
+19216054090953302
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -58666,6 +58666,20 @@ Mounting 4.5mm 9774100982
 0
 8
 1
+My_Libary
+6pin_Push_Button_Switch
+
+
+0
+6
+3
+My_Libary
+LED_Cree-XHP50_12V
+Cree XHP50, 12V footprint, http://www.cree.com/~/media/Files/Cree/LED%20Components%20and%20Modules/XLamp/Data%20and%20Binning/ds%20XHP50.pdf
+LED XHP50 Cree
+0
+15
+3
 NetTie
 NetTie-2_SMD_Pad0.5mm
 Net tie, 2 pin, 0.5mm square SMD pads
@@ -83026,17 +83040,3 @@ varistor SIOV
 0
 2
 2
-opena3x
-Logo
-
-
-0
-0
-0
-opena3x
-TACTILE_LED_TH
-
-
-0
-6
-4

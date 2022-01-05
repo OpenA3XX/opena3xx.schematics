@@ -73,7 +73,7 @@
     (pcbplotparams
       (layerselection 0x3f3ff_ffffffff)
       (usegerberextensions true)
-      (usegerberattributes true)
+      (usegerberattributes false)
       (usegerberadvancedattributes false)
       (creategerberjobfile false)
       (excludeedgelayer true)
